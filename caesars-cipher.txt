@@ -1,0 +1,14 @@
+function rot13(str) {
+  let alphbits = 'abcdefghijklmnopqrstuvwxyz'.toUpperCase();
+  function shifter(ele){
+    if (/[^A-Z]/.test(ele)){
+      return ele; 
+
+    }
+    return alphbits[(alphbits.indexOf(ele) + 13) % 26];
+
+  }
+  return str.split('').map(shifter).join('');
+}
+
+console.log(rot13("SERR PBQR PNZC"));
