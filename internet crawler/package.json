@@ -5,7 +5,7 @@
   "main": "main.js",
   "scripts": {
     "test": "console.log(\"hello world\")",
-    "start":"node main.js"
+    "start": "node main.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/javascript/webcrawler/issues"
   },
-  "homepage": "https://github.com/javascript/webcrawler#readme"
+  "homepage": "https://github.com/javascript/webcrawler#readme",
+  "devDependencies": {
+    "jest": "^29.6.2"
+  }
 }
