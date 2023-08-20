@@ -1,2 +1,8 @@
+const {crawlPage} = require("./crawl.js")
 
-console.log("done")
+async function main(){
+    
+     console.log(await crawlPage("https://wagslane.dev","https://wagslane.dev",{}));
+}
+
+main();
